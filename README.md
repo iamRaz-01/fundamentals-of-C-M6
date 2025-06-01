@@ -1,3 +1,6 @@
+## NAME: Abdul Rasak N 
+## REG NO: 212224240001
+
 # EX-26-AREA-OF-RECTANGLE-USING- POINTER
 ## AIM
 To write a C Program to find area of rectangle using pointer.
@@ -11,8 +14,22 @@ To write a C Program to find area of rectangle using pointer.
 
 ## PROGRAM
 
+```c
+#include<stdio.h>
+int main()
+{
+int mlenght,width
+int*len=len&lenght, *wid=&width;
+scanf("%d%d",len,wid);
+float area=(*len)*(*wid);
+printf("Area of rectangle = %f sq. units ", area);
+return 0;
+}
+```
+
 ## OUTPUT
 		       	
+![image](https://github.com/user-attachments/assets/04a43851-c3af-49f1-980d-214f6ae6f354)
 
 
 ## RESULT
@@ -35,8 +52,34 @@ To write a C Program to print 'WELCOME' using malloc() and free().
 
 ## PROGRAM
 
+```c
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+char *str = (char *)malloc(8 * size(char));
+if (str == NULL)
+{
+printf("Memory allocation failed!\n);
+return 1;
+}
+str[0] = 'w'
+str[1] = 'E';
+str[2] ='L'
+str[3] ='C'
+str[4[ ='O'
+str [5] ='M'
+str[6] ='E'
+str[7] ='\0';
+printf("%s\n",str);
+free(str);
+return 0;
+}
+```
+
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/e6b95ef8-fec2-4235-9641-200aab63756f)
 
 
 ## RESULT
@@ -60,9 +103,30 @@ To write a C Program to store the student information and display it using struc
 4.	Stop the program.
 
 ## PROGRAM
+```c
+#include<stdio.h>
+struct student {
+ chsr name[50];
+int rollNumber;
+float marks;
+}
+int main() {
+ struct student student;
+scanf("%s", student.name);
+scanf("%d", &student.rollNumber);
+scanf("%f", &student.marks);
+printf("Displaying Information:\n);
+printf("Name" %s\n", student.name);
+printf("Roll number: %d\n",student.rollBumber);
+printf("Marks: %.1f\n",student.marks);
+return 0;
+}
 
+```
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/1a3b6555-ff3b-4266-bb42-6b5ee13f6d3c)
 
 
 ## RESULT
@@ -88,10 +152,39 @@ To write a C Program to read and store the data of 3 employees and calculate the
 
 ## PROGRAM
 
+```c
+#include<stdio.h>
+struct employee
+{
+int eno;
+char dept[20];
+float basicpay;
+float da;
+float hra;
+float grossSalary;
+};
+int main()
+{
+struct employee emp[3]
+for (int i=0;i<3;i++)
+{
+scanf("%d %s %f", &emp[i].eno,emp[i].dept,&emp[i].basipay);
+emp[i].da=emp[i].basicpay*0.10;
+emp[i].hra=emp[i].basicpay*0.30;
+emp[i].grossSalary=emp[i].basicpay+emp[i].hra;
+}
+printf("Details of the Employee:\n);
+for(int i=0;,i<3;i++)
+{
+printf("%d %s %.0f %.0f %.2f\n", emp[i].eno,emp[i].dept,emp[i].basicpay,em
+}
+}
+```
 
  ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/95f3fc8b-40f2-4abe-826c-cdd5051f04f9)
+
 
 ## RESULT
 
@@ -107,7 +200,7 @@ Thus the C program to read and store the data of 3 employees and calculate their
 Create a C program to calculate the total and average of student using structure.
 
 ## ALGORITHM 
-
+```
 Step 1: Start the program.
 Step 2: Define a struct student with:
 •	name: a character array (size 10) for the student's name (not used in the logic).
@@ -132,17 +225,54 @@ Step 6: Override Total (Hardcoded):
 Step 7: Output Loop (i = 0 to 1):
 •	Print s[i].total for each student.
 Step 8: End the program.
-
+```
 ## PROGRAM
 
+```c
+#include<studio.h>
+struct student
+{
+char name[10];
+int rollno;
+int subject[5];
+int total;
+float average;
+};
+int main() {
+ struct student s[2];
+int i,j;
+for(i=0; i<2; i++) {
+printf("Enter details for student %d\n",i+1);
+printf("Enter roll number: ");
+scanf("%d", &s[i].rollno);
+printf(""Enter maarks for 5 subjects: ");
+for(j=0; j <5; j++){
+scanf("%d", &s[i].subject[j]);
+}
+s[i].total=0;
+for(j=0;j<5;j++){
+fs[i].total +=s[i].subject[j];
+}
+s[i].average=s[i].total/5.0;
+if(i==0)s[i].total=374;
+if((i==1) s[i].total=383;
+}
+for(i=0;i<2;i++) {
+printf("\nStudent %d:\n",i+1);
+printf("""""Total marks: %d\n", s[i].tatal);
+printf("Average marks: %.2f\n",s[i].average);
+}
+return 0;
+}
+```
 
 ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/00cca52b-f084-43f4-8f84-d1070385caa9)
+
 
 ## RESULT
 
 Thus the C program to calculate the total and average of student using structure has been executed successfully.
 	
-
 
