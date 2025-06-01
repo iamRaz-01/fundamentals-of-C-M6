@@ -1,7 +1,7 @@
 ## NAME: Abdul Rasak N 
 ## REG NO: 212224240001
 
-# EX-26-AREA-OF-RECTANGLE-USING- POINTER
+## EX-26-AREA-OF-RECTANGLE-USING- POINTER
 ## AIM
 To write a C Program to find area of rectangle using pointer.
 
